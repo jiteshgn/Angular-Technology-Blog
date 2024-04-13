@@ -1,0 +1,13 @@
+  <app-header *ngIf="!isLogged"></app-header>
+  <app-admin-header *ngIf="isLogged"></app-admin-header>
+  <app-category-navbar *ngIf="!isLogged"></app-category-navbar>
+  <div class="app-body">
+    <!-- <app-post-card></app-post-card> -->
+    <router-outlet></router-outlet>
+  </div>
+  <div class="container111 mt-5" *ngIf="!isLogged">
+    <div class="row justify-content-center">
+      <app-subscription-form></app-subscription-form>
+    </div>
+  </div>
+  <app-footer></app-footer>

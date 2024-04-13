@@ -1,0 +1,16 @@
+<header class="navbar navbar-expand-lg fixed-top bg-white d-flex justify-content-between">
+    <div class="container1 justify-content-start d-flex align-items-center">
+        <a href="#" class="site-logo" *ngIf="!isLoggedIn$"><!--Tech Blog--><img src="./assets/blog_logo.png"/></a>
+        <a href="/admin" class="site-logo" *ngIf="isLoggedIn$ | async"><!--Tech Blog--><img src="./assets/blog_logo.png" routerLink="/admin"/></a>
+
+        <!-- <button class="adminhmbtn" routerLink="/admin" *ngIf="isLoggedIn$ | async"><i class="fa-solid fa-user-gear"></i>&nbsp;Admin Home</button> -->
+    </div>
+    <div class="container1 justify-content-end mr-2" *ngIf="!isLoggedIn$">
+        <a href="#" class="mr-3">{{userEmail}}</a>
+        <button class="btn btn-sm btn-info bg-secondary-theme text-theme-primary mx-3" routerLink="/admin"><i class="fa-solid fa-user-tie"></i>&nbsp;&nbsp;Admin Login</button>
+    </div>
+    <div class="container1 justify-content-end mr-2" *ngIf="isLoggedIn$ | async">
+        <div><small>Welcome</small><br/><a href="#" class="mr-3">{{userEmail}}</a></div>
+        <button class="btn btn-sm btn-info bg-secondary-theme text-theme-primary mx-3" (click)="onLogout()"><i class="fa-solid fa-user"></i>&nbsp;Logout</button>
+    </div>
+</header>

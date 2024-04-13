@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary-color: #026467 !important;
+    --secondary-color: #E5F5EA !important;
+    --body-text-color: #596392 !important;
+    --navbar-footer-color: #2d629e !important;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size:12px;
+    color:var(--body-text-color);
+}
+
+.site-logo{
+    /* border-radius: 20px; */
+    /* background-color: var(--secondary-color); */
+    color:var(--primary-color);
+}
+.site-logo img{
+    margin-top:3vh;
+    margin-left:4vw;
+    width:20vw;
+}
+
+.nav-link{
+    color:var(--primary-color);
+}
+.shadow-effect{
+    border: none;
+    /* box-shadow:0px 0px 33px -10px rgba(71,114,254,0.3); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bg-theme{
+    background-color: var(--primary-color);
+}
+.bg-secondary-theme{
+    background-color: var(--secondary-color);
+}
+.text-theme-primary{
+    color: var(--primary-color);
+}
+
+input[type=text],input[type=email],input[type=password]{
+    height:60px;
+    padding-left:20px;
+    font-size:13px;
+    width:100%;
+}
+.btn-theme{
+    height:auto;
+    border:none;
+    font-size:13px;
+    background-color: var(--primary-color);
+}
+
+/*Post Card*/
+.postcard{
+    height:1vh !important;
+    cursor:pointer;
+}
+.postbodyinner{
+    height:35vh;
+    overflow-y:auto;
+}
+.cardsubtitle{
+    font-size:1vw;
+}
+/*Post Card*/
+
+/*Subscription Form*/
+.subs-text{
+    font-size:0.8vw
+}
+/*Subscription Form*/
+

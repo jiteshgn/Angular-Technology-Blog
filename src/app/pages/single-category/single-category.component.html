@@ -1,0 +1,17 @@
+<div class="bg-theme p-3">
+    <div class="container">
+        <h3 class="text-white">{{categoryObj.category}}</h3>
+        <!-- <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p> -->
+    </div>
+</div>
+
+<div class="container mt-5 mb-5 singcat">
+    <div class="row">
+        <div class="col-md-4 mb-3" *ngFor="let post of postsArray">
+            <app-post-card [postData]="post"></app-post-card>
+        </div>
+        <div class="col-md-4 mb-3" *ngIf="postsArray.length==0">
+            No Posts in the Category Yet!!
+        </div>
+    </div>
+</div>
