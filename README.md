@@ -1,27 +1,30 @@
-# Blogapp
+# Technology Blog developed using Angular
+The following technologies are used to build it.<br/>
+<ol><li>Angular 17.3.3</li>
+<li>Firebase 10.7.0</li>
+<li>FireStore Database</li>
+<li>Bootstrap 5.3.3</li>  
+<li>Google Authentication</li>
+<li>Typescript 5.4.4</li></ol>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+# Blog Contents:
+<ul><li>Latest Posts, Featured Posts on the Home Page</li>
+<li>Subscription form at the bottom where the customers can subscribe for the latest mailing list</li>
+<li>Various Categories for the Blog to select from, like Gaming, Social, Apps</li>
+<li>Each Post can be opened when clicked and users can enter comments for it</li>
+<li>Proceed to Buy items, do the Checkout, Shipping</li>
+<li>See the list of all own orders in the Orders Section</li></ul>
 
-## Development server
+# Admin Login:
+<ul><li>Create, Retrieve, Update, Delete Categories</li>
+<li>Create, Retrieve, Update, Delete Posts</li>
+<li>View, Delete Subscribers</li>
+<li>Mark/Unmark Post as Featured </li></ul>
 
+# Preview:
+<img src="tech_blog_home.png"/><br/>
+<img src="tech_blog_admin_posts.png"/>
+
+# Development Server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
